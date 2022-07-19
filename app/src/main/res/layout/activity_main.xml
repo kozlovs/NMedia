@@ -61,7 +61,7 @@
         app:layout_constraintTop_toBottomOf="@+id/barrierInfo">
 
         <TextView
-            android:id="@+id/text"
+            android:id="@+id/content"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             tools:text="@sample/posts.json/data/text" />
@@ -162,13 +162,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@id/viewButton"
         tools:text="@sample/posts.json/data/view" />
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_marginTop="@dimen/common_spacing"
-        android:background="@android:color/holo_red_dark"
-        app:layout_constraintTop_toBottomOf="@id/likeButton" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
