@@ -2,6 +2,7 @@ package ru.netology.nmedia
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.core.view.marginLeft
 import ru.netology.nmedia.databinding.ActivityMainBinding
 import ru.netology.nmedia.dto.Post
 
@@ -46,11 +47,6 @@ class MainActivity : AppCompatActivity() {
             shareButton.setOnClickListener {
                 post.share++
                 shareCount.text = numberToShortFormat(post.share)
-            }
-
-            viewButton.setOnClickListener {
-                post.view++
-                viewCount.text = numberToShortFormat(post.view)
             }
         }
     }
